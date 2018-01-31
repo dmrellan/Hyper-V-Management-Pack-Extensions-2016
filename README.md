@@ -1,4 +1,4 @@
-# Hyper-V-Management-Pack-Extensions-2016
+# Hyper-V Management Pack Extensions 2016
 
 This Hyper-V Management Pack Extensions 2016 is intended to add performance monitoring to the existing Hyper-V Management Pack.
 
