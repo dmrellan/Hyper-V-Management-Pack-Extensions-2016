@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ManagementPack ContentReadable="true" SchemaVersion="2.0" OriginalSchemaVersion="1.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <Manifest>
+    <Identity>
+      <ID>HyperV.MP.Extensions.Enabled.All.Performance.Rulles</ID>
+      <Version>1.0.0.0</Version>
+    </Identity>
+    <Name>Hyper-V MP Extensions 2016 - Enabled All Performance Rulles</Name>
+    <References>
+      <Reference Alias="Windows">
+        <ID>Microsoft.Windows.HyperV.2016.Discovery</ID>
+        <Version>10.0.8.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="MPE">
+        <ID>HyperV.MPE.2016.Discovery</ID>
+        <Version>3.0.0.7</Version>
+        <PublicKeyToken>34900d5f909891c9</PublicKeyToken>
+      </Reference>
+      <Reference Alias="SystemCenter">
+        <ID>Microsoft.SystemCenter.Library</ID>
+        <Version>7.0.8433.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+      <Reference Alias="HyperV.MPE.2016.Monitoring">
+        <ID>HyperV.MPE.2016.Monitoring</ID>
+        <Version>3.0.0.3</Version>
+        <PublicKeyToken>34900d5f909891c9</PublicKeyToken>
+      </Reference>
+      <Reference Alias="Windows1">
+        <ID>Microsoft.Windows.HyperV.Library</ID>
+        <Version>10.0.8.0</Version>
+        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>
+      </Reference>
+    </References>
+  </Manifest>
+  <Monitoring>
+    <Overrides>
+      <RulePropertyOverride ID="OverrideFor_Rule_07ee904e7d3ad9656951b89b049dc9a1_ForContext_79f2532e5928367e82464a15885020db82a46e277df748748f95c1302ff078c8" Context="MPE!HyperV.MPE.2016.LogicalProcessor" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.LogicalProcessor.ContextSwitches.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_a5618fd627076e96c68674b538b588b0_ForContext_79f2532e5928367e82464a15885020dbd32fd29be29544c0bd48e2eae428da14" Context="MPE!HyperV.MPE.2016.LogicalProcessor" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.LogicalProcessor.TotalRunTime.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_28eafe54b3d6de0ee7558a1e6def6118_ForContext_79f2532e5928367e82464a15885020dbec66aef51883413c8aa2fb00ae21f655" Context="MPE!HyperV.MPE.2016.LogicalProcessor" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.LogicalProcessor.HypervisorRunTime.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_8ababc07694b0a2c0596e6e0dc6b5f73_ForContext_6fbd955f8cba8dc504a34e8e0657006385f4a6334ac3401aa1f6b652200de664" Context="MPE!HyperV.MPE.2016.SMBShare" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.SMBClientShares.DataRequestsSec.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_858783271275abd603a0419d94435b6b_ForContext_6fbd955f8cba8dc504a34e8e0657006393e4459a745f40a8beb13a7b0e7c294f" Context="MPE!HyperV.MPE.2016.SMBShare" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.SMBClientShares.AvgSecWrite.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_4bd04349cea492553bd310463645ce96_ForContext_6fbd955f8cba8dc504a34e8e065700630f1a67caac1e48cdac4798ae2e70c331" Context="MPE!HyperV.MPE.2016.SMBShare" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.SMBClientShares.AvgSecRead.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_cd8fc66d9081f912dcd89b450b1e8428_ForContext_6fbd955f8cba8dc504a34e8e06570063dfdbae67cd7046f0b48f3339dd5a5361" Context="MPE!HyperV.MPE.2016.SMBShare" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.SMBClientShares.AvgDataQueueLength.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_866b83d8a4385fc55620bfb4b4812844_ForContext_c8506c95cac8abbe1854b0d598e539de67d11ef26ffc40259ec06aa00d0b6f77" Context="MPE!HyperV.MPE.2016.VMs.VHDs" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.VirtualStorageDeviceWritesBytesSec.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_ceac33bb769c9189b6b9592d255fec84_ForContext_c8506c95cac8abbe1854b0d598e539dee9e29cb072af4ff5a56c6819eeb8a46a" Context="MPE!HyperV.MPE.2016.VMs.VHDs" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.VirtualStorageDeviceReadBytesSec.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_2ea408cbea8201ea03e1b435348eb449_ForContext_cb71156713fd22b96367279df084bea59c6d7478cf5a4f9a90a15f153676ce69" Context="MPE!HyperV.MPE.2016.VirtualProcessor" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.VirtualProcessor.GuestRunTime.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_538c884b170eb6b466d170117f0e9b36_ForContext_04cefa98b14d61c374bf9fcb3e1248c81b2c27c1957b4a8c90b8726c5aac1c10" Context="Windows!Microsoft.Windows.HyperV.2016.VirtualMachine" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.VirtualMachine.DMVMGuestVisiblePhysicalMemory.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_ceb2b0dd9ca2c512dfbf33145ec43be8_ForContext_04cefa98b14d61c374bf9fcb3e1248c843fb09667dc546b4ae4e969d62a61da7" Context="Windows!Microsoft.Windows.HyperV.2016.VirtualMachine" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.VirtualMachine.DMPhysicalMemory.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_5f99f70b632f1c5636d8f06932050bf9_ForContext_d0f4c57d27796018ca128a2e7c68e162bad2b95b1f024b8ca748979bbeff1821" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.ContextSwitchesSecCounter.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_7e90fe150c4fd64f9387549e7c5f5cd4_ForContext_d0f4c57d27796018ca128a2e7c68e162455d0a7ba8dc486d8c806ef67d16fcd8" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.LiveMigrationsFailures.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_a45ba00724ac44c94af48f0a794e04f5_ForContext_d0f4c57d27796018ca128a2e7c68e162a567b83d2f394959a34b76bb6a4b272a" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.NetworkInterfaceBytesSent.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_f8fcb3579813d1b2906385bbcd0de446_ForContext_d0f4c57d27796018ca128a2e7c68e162ba861323905a40cc94bebf3775853f0e" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.NetworkInterfaceReceived.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_363b38ac37856915b528aab5d9bff409_ForContext_d0f4c57d27796018ca128a2e7c68e1620a37bc229d2249b18ab3706f631e3c8e" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.NUMANodePageCount.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_330c97f753221c3d6fb1210659b54ecc_ForContext_d0f4c57d27796018ca128a2e7c68e162a4b6b20c81ab4520966c71273a2e35a1" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.NUMANodeProcessorCount.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_534edc0a7cf2498722f3b2424198303e_ForContext_d0f4c57d27796018ca128a2e7c68e162c5f0127cb8dc48e49fec32e32d343b66" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.ProcessorQueueLength.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_085519153ec5560317034179f510d569_ForContext_d0f4c57d27796018ca128a2e7c68e162ba4d59778d764199b669b9f48a778faf" Context="Windows!Microsoft.Windows.HyperV.2016.ServerRole" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.VirtualNetworkAdapterBytesSec.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+      <RulePropertyOverride ID="OverrideFor_Rule_3694fa7d07be7c817035c455792a97a0_ForContext_3e4c33baca5e9a5d8c74c42a866c6276f49493996d02455aabac2371bccfd638" Context="Windows1!Microsoft.Windows.HyperV.VirtualNetwork" Enforced="false" Rule="HyperV.MPE.2016.Monitoring!HyperV.MPE.2016.SRHV.VirtualSwitchBytesSec.Rule" Property="Enabled">
+        <Value>true</Value>
+      </RulePropertyOverride>
+    </Overrides>
+  </Monitoring>
+  <Presentation>
+    <Folders>
+      <Folder ID="Folder_0d0b3fa02a7d41be9dfdf9f6d32d3077" Accessibility="Public" ParentFolder="SystemCenter!Microsoft.SystemCenter.Monitoring.ViewFolder.Root" />
+    </Folders>
+  </Presentation>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="false">
+      <DisplayStrings>
+        <DisplayString ElementID="HyperV.MP.Extensions.Enabled.All.Performance.Rulles">
+          <Name>Hyper-V MP Extensions 2016 - Enabled All Performance Rulles</Name>
+        </DisplayString>
+        <DisplayString ElementID="Folder_0d0b3fa02a7d41be9dfdf9f6d32d3077">
+          <Name>Hyper-V MP Extensions 2016 - Enabled All Performance Rulles</Name>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_07ee904e7d3ad9656951b89b049dc9a1_ForContext_79f2532e5928367e82464a15885020db82a46e277df748748f95c1302ff078c8">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_a5618fd627076e96c68674b538b588b0_ForContext_79f2532e5928367e82464a15885020dbd32fd29be29544c0bd48e2eae428da14">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_28eafe54b3d6de0ee7558a1e6def6118_ForContext_79f2532e5928367e82464a15885020dbec66aef51883413c8aa2fb00ae21f655">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_8ababc07694b0a2c0596e6e0dc6b5f73_ForContext_6fbd955f8cba8dc504a34e8e0657006385f4a6334ac3401aa1f6b652200de664">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_858783271275abd603a0419d94435b6b_ForContext_6fbd955f8cba8dc504a34e8e0657006393e4459a745f40a8beb13a7b0e7c294f">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_4bd04349cea492553bd310463645ce96_ForContext_6fbd955f8cba8dc504a34e8e065700630f1a67caac1e48cdac4798ae2e70c331">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_cd8fc66d9081f912dcd89b450b1e8428_ForContext_6fbd955f8cba8dc504a34e8e06570063dfdbae67cd7046f0b48f3339dd5a5361">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_866b83d8a4385fc55620bfb4b4812844_ForContext_c8506c95cac8abbe1854b0d598e539de67d11ef26ffc40259ec06aa00d0b6f77">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_ceac33bb769c9189b6b9592d255fec84_ForContext_c8506c95cac8abbe1854b0d598e539dee9e29cb072af4ff5a56c6819eeb8a46a">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_2ea408cbea8201ea03e1b435348eb449_ForContext_cb71156713fd22b96367279df084bea59c6d7478cf5a4f9a90a15f153676ce69">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_538c884b170eb6b466d170117f0e9b36_ForContext_04cefa98b14d61c374bf9fcb3e1248c81b2c27c1957b4a8c90b8726c5aac1c10">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_ceb2b0dd9ca2c512dfbf33145ec43be8_ForContext_04cefa98b14d61c374bf9fcb3e1248c843fb09667dc546b4ae4e969d62a61da7">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_5f99f70b632f1c5636d8f06932050bf9_ForContext_d0f4c57d27796018ca128a2e7c68e162bad2b95b1f024b8ca748979bbeff1821">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_7e90fe150c4fd64f9387549e7c5f5cd4_ForContext_d0f4c57d27796018ca128a2e7c68e162455d0a7ba8dc486d8c806ef67d16fcd8">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_a45ba00724ac44c94af48f0a794e04f5_ForContext_d0f4c57d27796018ca128a2e7c68e162a567b83d2f394959a34b76bb6a4b272a">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_f8fcb3579813d1b2906385bbcd0de446_ForContext_d0f4c57d27796018ca128a2e7c68e162ba861323905a40cc94bebf3775853f0e">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_363b38ac37856915b528aab5d9bff409_ForContext_d0f4c57d27796018ca128a2e7c68e1620a37bc229d2249b18ab3706f631e3c8e">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_330c97f753221c3d6fb1210659b54ecc_ForContext_d0f4c57d27796018ca128a2e7c68e162a4b6b20c81ab4520966c71273a2e35a1">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_534edc0a7cf2498722f3b2424198303e_ForContext_d0f4c57d27796018ca128a2e7c68e162c5f0127cb8dc48e49fec32e32d343b66">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_085519153ec5560317034179f510d569_ForContext_d0f4c57d27796018ca128a2e7c68e162ba4d59778d764199b669b9f48a778faf">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+        <DisplayString ElementID="OverrideFor_Rule_3694fa7d07be7c817035c455792a97a0_ForContext_3e4c33baca5e9a5d8c74c42a866c6276f49493996d02455aabac2371bccfd638">
+          <Name>NotUsed</Name>
+          <Description>Created by SCOMLAB\omadmin</Description>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPack>
