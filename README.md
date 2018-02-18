@@ -10,11 +10,14 @@ The configured thresholds on the monitors should cover most common scenarios but
 
 ## This Management Pack is provided "as is" without any official support from Microsoft.
 
-## New features on release 3.0.0.10
+## New features on release 3.0.0.30
 * Support for Windows Server 2016 Hyper-V.
 * New management pack structure in four files: Library, Discovery, Monitoring, Presentation and XML file to enable all performance rules (contains overrides Enable=True).
 * New classes, discoveries, groups, monitors, rules and views for 2016 objects.
 * Covered all features from the previous version (Hyper-V MP Extensions 2012 R2).
+* Modified Integration Services monitor and class for VM Configuration Version (Hyper-V 2016)
+* Added Product Knowledge for the majority of monitors.
+* Added Hyper-V MPE 2016 Dynamic Memory Maximum Load Per Host monitor (Disabled by defualt).
 * Minor code optimizations.
 
 ## Features on release 3.0.0.10 (included from previous release)
